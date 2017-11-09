@@ -1,1 +1,3 @@
-Hello, my name is Delaney Ramalho. I am the author of CreolePlease. I am 20 years old and from Guyana, South America. This project's goal is to be able to convert standard American English into something resembling Guyanese Creole.
+Once upon a time, across the sea there lived a monster. This monster was huge, and had a brother. I am thinkin what other things I can put in here to test this program out.
+This isn't usually how I would type. I will have to use words here to just test the program. I will then push this repository to Github, because version control is great.
+This is a difficult thing to do, but I don't mind the challenge. I can't wait to say I did this and show people like my mother, father or sisters this program.  

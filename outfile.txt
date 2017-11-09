@@ -1,2 +1,4 @@
-wamnin, my name is delaney ramalho. i am the author of creoleplease. i am 20 years old and from guyana, south america. this 
-projects goal is to be able to convert standard american english into something resembling guyanese creole. 
+once upon a time, across de sea there lived a monster. this monster went huge, and had a brudduh. i am thinkin what oduh things 
+i can put in here fuh test this program out. this isnt usually how i would type. i gun got fuh use word hay to just test de program. 
+i gun then push this repository fuh github, cause version control is great. this is a difficult thin fuh do, but i in mind the 
+challenge. i cant wait to say i do this and show people like my mother, faduh or sisters this program. 

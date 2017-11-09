@@ -8,6 +8,18 @@
 
 using namespace std;
 
+//Function Protoypes
+string ConvertStrToLower(string input);
+vector<string> StringToVectorOfWords(string input); 
+int RemovePunctuation(string &input);
+string DetermineWord(string input, unordered_map<string, vector<string>> Words); 
+vector<string> CheckMapAndReplace(vector<string> input, unordered_map<string, vector<string>> Words);
+string ReconstructString(vector<string> input); 
+string CreolePlease(string input, unordered_map<string, vector<string>> WordConversions); 
+string GetTextInputFromFile();
+void GetWordMappingsFromFile(unordered_map<string, vector<string>> &WordConversions);
+void WriteOutputToFile(string input);
+
 // This function converts an entire string to lowercase character by character.
 string ConvertStrToLower(string input) {
 	string output = input;
@@ -139,6 +151,7 @@ string CreolePlease(string input, unordered_map<string, vector<string>> WordConv
 	Words = StringToVectorOfWords(output);
 	Words = CheckMapAndReplace(Words, WordConversions);
 	output = ReconstructString(Words);
+	WriteOutputToFile(output);
 	return output;
 }
 
@@ -186,6 +199,15 @@ void GetWordMappingsFromFile(unordered_map<string, vector<string>> &WordConversi
 	return;
 }
 
+// This function takes the converted string created by the program and writes it to a file.
+void WriteOutputToFile(string input){
+	ofstream outfile;
+	outfile.open("outfile.txt");
+	outfile << input;
+	outfile.close();
+	return;
+}
+
 int main() 
 {
   	// TODO Phrase and Idiomatic Manipulations
@@ -198,6 +220,6 @@ int main()
 	srand(time(NULL));
 
 	string user_input = GetTextInputFromFile();
-	cout << CreolePlease(user_input, WordConversions);
+	CreolePlease(user_input, WordConversions);
 	return 0;
 } 
